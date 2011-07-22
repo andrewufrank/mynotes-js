@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>MyNotes 1</title>
+
+<!-- <link rel="stylesheet" href="style/main.css" type="text/css">  -->
+
+    <link rel="stylesheet" href="style/jquery.mobile-1.0b1.css" type="text/css"/>
+  </head>
+  <body>
+        <!--     removed the account and profile, not used yet -->
+     <!-- ====== initial ===== -->  
+
+    <div data-role="page" data-theme="b" id="initialPage">  
+        <div data-role="header" id="initialHeader" data-nobackbtn="true">
+        initial header  
+        </div>  
+        <div data-role="content" id="initialContent" >  
+        initial content 
+        </div>  
+        <div data-role="footer" id="initialFooter"  >
+        initial footer
+          <div data-role="navbar">
+                <ul class="ui-grid-a">
+                    <li style="width:100%;">
+                       <fieldset class="ui-grid-a">
+                        <a href="#addPage" data-transition="slideup" data-icon="plus">Add Item</a>
+                        <a href="#showListPage" data-transition="slideup" data-icon="plus">Show List of Tags</a>
+                        <a href="#selectNotePage" data-transition="slideup" data-icon="plus">Show List of Titles selected (does not belong here)</a>
+                       </fieldset>
+                    </li>
+                </ul>
+          </div>
+        </div>  
+    </div><!-- initial -->  
+
+     <!-- ====== add ===== -->  
+
+    <div data-role="page" data-theme="b" id="addPage">  
+        <div data-role="header" id="addHeader" data-nobackbtn="true">
+        add header  
+            <p>add a single item - editpage</p>
+            <a href="#initialPage" data-icon="grid" class="ui-btn-right">initial page</a>  
+        </div>  
+        <div data-role="content" id="addContent" >  // rest should go to mustache TODO ??
+            <a>add content </a>
+        </div>  
+        <div data-role="footer" id="addFooter"  >
+        add footer
+        </div>  
+    </div><!-- add -->  
+
+     <!-- ====== showListPage =====  -->
+
+    <div data-role="page" data-theme="b" id="showListPage">  
+        <div data-role="header" id="showListPageHeader" data-nobackbtn="true">
+        showListPage header  
+            <p>add a single item - editpage</p>
+            <a href="#initialPage" data-icon="grid" class="ui-btn-right">initial page</a>  
+        </div>  
+        <div data-role="content" id="showListContent" >  
+        showListPage content 
+        </div>  
+        <div data-role="footer" id="showListFooter"  >
+        showListPage footer
+        </div>  
+    </div><!-- showListPage -->  
+
+     <!-- ====== selectNote =====  -->
+
+    <div data-role="page" data-theme="b" id="selectNotePage">  
+        <div data-role="header" id="selectNoteHeader" data-nobackbtn="true">
+        selectNote header  
+            <p>add a single item - editpage</p>
+            <a href="#initialPage" data-icon="grid" class="ui-btn-right">initial page</a>  
+        </div>  
+        <div data-role="content" id="selectNoteContent" >  
+        selectNote content 
+        </div>  
+        <div data-role="footer" id="selectNoteFooter"  >
+        selectNote footer
+        </div>  
+    </div> 
+    <!-- selectNote --> 
+    
+     <!-- ====== pagex =====  
+
+    <div data-role="page" data-theme="b" id="pagexPage">  
+        <div data-role="header" id="pagexHeader" data-nobackbtn="true">
+        pagex header  
+        </div>  
+        <div data-role="content" id="pagexContent" >  <!-- this goes to add.. -->
+        pagex content 
+        </div>  
+        <div data-role="footer" id="pagexFooter"  >
+        pagex footer
+        </div>  
+    </div> pagex -->  
+
+    </body>
+
+    <script src="vendor/couchapp/loader.js"></script>
+    <script src="logic.js"></script>
+
+</html>
